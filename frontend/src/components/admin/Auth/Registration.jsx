@@ -13,7 +13,7 @@ const RegisterPage = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/register", {
+      await axios.post("https://geniusbaby.onrender.com/api/register", {
         username: username,
         email: email,
         password: password,

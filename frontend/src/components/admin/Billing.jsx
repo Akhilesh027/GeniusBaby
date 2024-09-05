@@ -10,7 +10,7 @@ const ViewBillings = () => {
     useEffect(() => {
         const fetchBillings = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/billings');
+                const response = await axios.get('https://geniusbaby.onrender.com/api/billings');
                 setOrders(response.data);
             } catch (error) {
                 console.error('Error fetching billings', error);
@@ -31,7 +31,7 @@ const ViewBillings = () => {
         try {
             const status = selectedStatus[orderId];
             if (status) {
-                await axios.put(`http://localhost:5000/orders/${orderId}/status`, { status });
+                await axios.put(`https://geniusbaby.onrender.com/orders/${orderId}/status`, { status });
                 setOrders((prevOrders) =>
                     prevOrders.map((order) =>
                         order.id === orderId ? { ...order, paymentStatus: status } : order

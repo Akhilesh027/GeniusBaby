@@ -11,7 +11,7 @@ const ManageProducts = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/products');
+                const response = await axios.get('https://geniusbaby.onrender.com/products');
                 setProducts(response.data);
             } catch (error) {
                 console.error('Error fetching products', error);
@@ -29,11 +29,11 @@ const ManageProducts = () => {
     const handleSave = async () => {
         try {
             if (editingProduct) {
-                await axios.put(`http://localhost:5000/products/${editingProduct}`, productData);
+                await axios.put(`https://geniusbaby.onrender.com/products/${editingProduct}`, productData);
                 setEditingProduct(null);
                 setProductData({ name: '', description: '', price: '', stock: '', imageUrl: '' });
                 // Refresh products list
-                const response = await axios.get('http://localhost:5000/products');
+                const response = await axios.get('https://geniusbaby.onrender.com/products');
                 setProducts(response.data);
             }
         } catch (error) {
@@ -66,7 +66,7 @@ const ManageProducts = () => {
                             <td>
                                 <button onClick={() => handleEdit(product)}>Edit</button>
                                 <button onClick={async () => {
-                                    await axios.delete(`http://localhost:5000/products/${product.id}`);
+                                    await axios.delete(`https://geniusbaby.onrender.com/products/${product.id}`);
                                     setProducts(products.filter(p => p.id !== product.id));
                                 }}>Delete</button>
                             </td>

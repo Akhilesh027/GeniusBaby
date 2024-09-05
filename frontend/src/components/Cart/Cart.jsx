@@ -13,7 +13,7 @@ const Cart = ({ onClose }) => {
     // Fetch cart items from the backend
     const fetchCartItems = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/cart'); // Adjust the endpoint as necessary
+        const response = await axios.get('https://geniusbaby.onrender.com/cart'); // Adjust the endpoint as necessary
         setCartItems(response.data);
 
         // Calculate the total amount
@@ -32,7 +32,7 @@ const Cart = ({ onClose }) => {
 
   const handleDelete = async (productId) => {
     try {
-      await axios.delete(`http://localhost:5000/cart/${productId}`);
+      await axios.delete(`https://geniusbaby.onrender.com/cart/${productId}`);
       // Remove the item from the state
       setCartItems(cartItems.filter((item) => item.productId !== productId));
       // Update the total amount

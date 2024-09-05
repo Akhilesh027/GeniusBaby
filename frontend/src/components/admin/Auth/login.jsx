@@ -12,7 +12,7 @@ const Loginpage = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/login', { email, password });
+      const response = await axios.post('https://geniusbaby.onrender.com/login', { email, password });
       localStorage.setItem('token', response.data.token); // Store the token in local storage
       alert('Login successful!');
       navigate('/admin/dashboard'); // Redirect to the dashboard page

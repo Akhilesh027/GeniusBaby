@@ -24,7 +24,7 @@ const ContactForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/api/contact', formData);  // Use Axios to post data
+            const response = await axios.post('https://geniusbaby.onrender.com/api/contact', formData);  // Use Axios to post data
             if (response.status === 200) {
                 alert('Message sent successfully!');
                 setFormData({ name: '', email: '', phone: '', message: '' });  // Reset form

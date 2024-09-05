@@ -46,7 +46,7 @@ const Buy = () => {
     // Fetch cart items from API
     const fetchCartItems = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/cart");
+        const response = await axios.get("https://geniusbaby.onrender.com/cart");
         setCartItems(response.data);
         const total = response.data.reduce(
           (acc, item) => acc + item.productPrice * item.quantity,
@@ -183,7 +183,7 @@ const Buy = () => {
       };
 
       const response = await axios.post(
-        "http://localhost:5000/api/billing",
+        "https://geniusbaby.onrender.com/api/billing",
         orderData
       );
 

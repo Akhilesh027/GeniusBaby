@@ -37,16 +37,16 @@ const AdminDashboard = () => {
         // Fetch products, orders, billings, and summary data
         const fetchData = async () => {
             try {
-                const productsResponse = await axios.get('http://localhost:5000/products');
+                const productsResponse = await axios.get('https://geniusbaby.onrender.com/products');
                 setProducts(productsResponse.data);
 
-                const ordersResponse = await axios.get('http://localhost:5000/api/billings');
+                const ordersResponse = await axios.get('https://geniusbaby.onrender.com/api/billings');
                 setOrders(ordersResponse.data);
 
-                const billingsResponse = await axios.get('http://localhost:5000/api/billings');
+                const billingsResponse = await axios.get('https://geniusbaby.onrender.com/api/billings');
                 setBillings(billingsResponse.data);
 
-                const summaryResponse = await axios.get('http://localhost:5000/api/summary');
+                const summaryResponse = await axios.get('https://geniusbaby.onrender.com/api/summary');
                 setSummary(summaryResponse.data);
             } catch (error) {
                 console.error('Error fetching data', error);
@@ -58,7 +58,7 @@ const AdminDashboard = () => {
 
     const handleDeleteProduct = async (id) => {
         try {
-            await axios.delete(`http://localhost:5000/products/${id}`);
+            await axios.delete(`https://geniusbaby.onrender.com/products/${id}`);
             setProducts(products.filter(product => product.id !== id));
         } catch (error) {
             console.error('Error deleting product', error);

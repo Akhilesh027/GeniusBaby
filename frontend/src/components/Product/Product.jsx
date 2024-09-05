@@ -28,7 +28,7 @@ const Product = ({ initialQuantity = 1, productId=1 }) => {
     const fetchProduct = async () => {
       try {
         const productId = 1
-        const response = await axios.get(`http://localhost:5000/products/${productId}`);
+        const response = await axios.get(`https://geniusbaby.onrender.com/products/${productId}`);
         setProduct(response.data);
         setMainImage(response.data.mainImage || ProductImage); // Set the main image from API if available
       } catch (err) {
@@ -60,7 +60,7 @@ const Product = ({ initialQuantity = 1, productId=1 }) => {
 
   const handleAddToCart = async () => {
     try {
-      await axios.post('http://localhost:5000/add', {
+      await axios.post('https://geniusbaby.onrender.com/add', {
         productId,
         productName: product.name,
         productPrice: product.price,
