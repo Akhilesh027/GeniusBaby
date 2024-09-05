@@ -1,0 +1,334 @@
+#product {
+  width: 100vw;
+  height: 120vh;
+  background-color: #f4f4f4; /* Updated background color */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.product-page {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.product-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  height: 650px;
+}
+
+.main-image img {
+  width: 100%;
+  height: 600px;
+  border: 2px solid #ddd; /* Updated border color */
+  object-fit: cover;
+}
+
+.thumbnail-images {
+  display: flex;
+  justify-content: center;
+  margin-top: -100px;
+}
+
+.thumbnail-images img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  margin: 0 5px;
+  border: 2px solid #ddd; /* Updated border color */
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.thumbnail-images img.active-thumbnail {
+  border-color: #4CAF50; /* Updated active border color */
+}
+
+.description {
+  width: 600px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.description h2 {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Merriweather', serif;
+  color: #333; /* Updated text color */
+}
+
+.description h3 {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Merriweather', serif;
+  margin-top: 20px;
+  color: #4CAF50; /* Updated text color */
+}
+
+.description p {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: 'Merriweather', serif;
+  margin-top: 10px;
+  color: #666; /* Updated text color */
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.quantity-selector button {
+  background-color: #f5f5f5; /* Updated button background color */
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.quantity-selector button:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.quantity-selector span {
+  margin: 0 10px;
+  font-size: 16px;
+  color: #333; /* Updated text color */
+}
+
+.incre {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pbtn {
+  padding: 10px 10vw;
+  background-color: #4CAF50; /* Updated button background color */
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  margin-top: 18px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pbtn:hover {
+  background-color: #45a049; /* Updated hover color */
+}
+
+/* Spinner styles */
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.spinner::after {
+  content: " ";
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 6px solid #ccc;
+  border-color: #4CAF50 transparent #4CAF50 transparent; /* Updated spinner color */
+  animation: spinner 1.2s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  #product {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    background-color: #f4f4f4; /* Updated background color */
+  }
+
+  .product-gallery {
+    width: 100%;
+  }
+
+  .main-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .thumbnail-images {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .thumbnail-images img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+  }
+
+  .description {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .description h2 {
+    font-size: 24px;
+  }
+
+  .description h3 {
+    font-size: 20px;
+  }
+
+  .description p {
+    font-size: 16px;
+  }
+
+  .quantity-selector {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .quantity-selector button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .quantity-selector span {
+    font-size: 14px;
+  }
+
+  .incre {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pbtn {
+    padding: 10px 40px;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #product {
+    flex-direction: column;
+    padding: 15px;
+    background-color: #FFF4EF; /* Updated background color */
+  }
+
+  .product-gallery {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+
+  .main-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .thumbnail-images {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+  }
+
+  .thumbnail-images img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s, transform 0.3s;
+  }
+
+  .thumbnail-images img.active-thumbnail {
+    border-color: #4CAF50; /* Updated active border color */
+    transform: scale(1.1);
+  }
+
+  .description {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .description h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333; /* Updated text color */
+  }
+
+  .description h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #4CAF50; /* Updated text color */
+  }
+
+  .description p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #666; /* Updated text color */
+  }
+
+  .quantity-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .quantity-selector button {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+
+  .quantity-selector span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .pbtn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50; /* Updated button background color */
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .pbtn:hover {
+    background-color: #45a049; /* Updated hover color */
+  }
+}

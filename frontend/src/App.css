@@ -1,0 +1,11 @@
+:root {
+  --primary-color: #FFC0CB; /* Soft Pink */
+  --secondary-color: #E6E6FA; /* Lavender */
+  --accent-color: #FF7F50; /* Coral */
+  --background-color: #FAF9F6; /* Off-White */
+  --text-color: #333333; /* Charcoal */
+  --heading-color: #7A5DC7; /* Deep Lavender */
+  --link-color: #008080; /* Teal */
+  --button-color: #FF6347; /* Bright Coral */
+  --button-text-color: #FFFFFF; /* White */
+}

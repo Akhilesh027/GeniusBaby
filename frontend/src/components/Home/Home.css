@@ -1,0 +1,71 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  color: var(--dark-grey); /* Default text color */
+}
+
+#Home {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Banner Section */
+#banner {
+  width: 100%;
+  height: 100vh;
+  color: var(--cream); /* Text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--baby-blue); /* Banner background color */
+  border-bottom: 2px solid var(--gentle-coral); /* Subtle border color */
+}
+
+#banner h1 {
+  width: 58%;
+    font-size: 4.8rem;
+    margin: 0;
+    padding: 0 1rem;
+    position: absolute;
+    top: 41%;
+  color: var(--cream); /* Heading text color */
+}
+
+/* Product Section */
+#Product {
+  background-color: var(--light-grey); /* Light background color for product section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--gentle-coral); /* Subtle border color */
+  padding: 2rem 0;
+}
+
+/* Reviews Section */
+#Reviews {
+  background-color: var(--white); /* White background color for reviews section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--gentle-coral); /* Subtle border color */
+  padding: 2rem 0;
+}
+
+/* Footer Section */
+#Footer {
+  width: 100%;
+  height: 50vh;
+  background-color: var(--lavender); /* Footer background color */
+  color: var(--dark-grey); /* Footer text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+  border-top: 2px solid var(--gentle-coral); /* Subtle border color */
+}

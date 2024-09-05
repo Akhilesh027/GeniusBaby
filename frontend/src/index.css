@@ -1,0 +1,22 @@
+:root {
+  /* Primary Colors */
+  --baby-blue: #A2C2E0;
+  --soft-pink: #F6C1C1;
+  --mint-green: #A0D6B4;
+  --lavender: #E6D6F2;
+
+  /* Neutral Colors */
+  --cream: #FFF9E6;
+  --light-grey: #F0F0F0;
+  --beige: #F5F5DC;
+
+  /* Accent Colors */
+  --warm-peach: #F5B8B2;
+  --gentle-coral: #FAD4D4;
+  --sunny-yellow: #FDF4B2;
+
+  /* Text Colors */
+  --dark-grey: #333333;
+  --navbar-color: #FFC0CB; /* Soft Pink */
+
+}
