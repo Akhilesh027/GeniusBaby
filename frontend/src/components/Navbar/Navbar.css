@@ -165,4 +165,7 @@
   .hamburger {
     display: block;
   }
+  #navbar.scrolled .box{
+    width: 80%;
+  }
 }

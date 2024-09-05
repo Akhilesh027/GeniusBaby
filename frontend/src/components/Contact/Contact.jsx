@@ -89,9 +89,9 @@ const ContactForm = () => {
                 </div>
                 <div className="contact-details">
                     <h2>Contact Information</h2>
-                    <p><i className="fas fa-map-marker-alt"></i> 123 Street, City, Country</p>
-                    <p><i className="fas fa-phone-alt"></i> +123 456 7890</p>
-                    <p><i className="fas fa-envelope"></i> info@example.com</p>
+                    <p><i className="fas fa-map-marker-alt"></i>Address: Patel's Green Front Apartments, Yapral, Secunderabad-500087, Telangana, India</p>
+                    <p><i className="fas fa-phone-alt"></i>+91 9885647711</p>
+                    <p><i className="fas fa-envelope"></i> <a href="mailto:support@geniusbaby.com" className="contact-link">info@geniusbaby.com</a></p>
                 </div>
             </div>
         </div>
