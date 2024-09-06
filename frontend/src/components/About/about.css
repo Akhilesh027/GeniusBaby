@@ -183,9 +183,7 @@
 
   .text-section p {
     font-size: 16px; /* Adjust font size for mobile */
-  }
-  .introduction img{
-    display: none;
+  
   }
  .p{
   display: block;
