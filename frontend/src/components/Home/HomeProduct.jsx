@@ -7,6 +7,7 @@ import image from "../Images/01.png";
 import image2 from "../Images/09.png";
 import image3 from "../Images/03.png";
 import image4 from "../Images/04.png";
+import whatsapp from "../Images/whatsapplogo.jpg"
 gsap.registerPlugin(ScrollTrigger);
 
 const ProductInfo = () => {
@@ -257,6 +258,7 @@ const ProductInfo = () => {
           </Link>
         </div>
       </div>
+      
     </div>
   );
 };

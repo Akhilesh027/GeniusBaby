@@ -6,8 +6,8 @@
 
 .slider {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 .slides {
@@ -16,14 +16,14 @@
 }
 
 .slide {
-    min-width: 100%;
+    min-width: 100vw;
     height: 100vh;
     box-sizing: border-box;
     position: relative;
 }
 
 .slide img {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
  
 }
@@ -57,4 +57,38 @@
 
 .slider .next {
     right: 10px;
+}
+@media (max-width: 768px){
+    #banner {
+        position: relative;
+        top: 20%;
+        width: 100%;
+        height: 50vh;
+        overflow: hidden;
+    }
+    
+    .slider {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+    
+    .slide {
+        min-width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        position: relative;
+    }
+    
+    .slide img {
+        width: 100vw;
+        height: 40vh;
+     
+    }
+    
 }

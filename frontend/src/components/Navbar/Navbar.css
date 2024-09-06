@@ -10,10 +10,8 @@
   z-index: 1000;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-
-/* Navbar box */
 .box {
-  width: 80vw; /* Adjusted width for better layout */
+  width: 80vw; 
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -21,40 +19,33 @@
   border-radius: 50px;
   transition: all 0.3s ease;
 }
-
-/* Logo */
 .logo img {
-  width: 60px; /* Adjusted size for better visibility */
+  width: 100px; 
   height: 60px;
-  border-radius: 50%;
   transition: transform 0.3s ease;
 }
 
 .logo img:hover {
-  transform: scale(1.1); /* Slight zoom effect on hover */
+  transform: scale(1.1); 
 }
-
-/* Links */
 .links {
   display: flex;
   gap: 20px;
 }
 
 .links a {
-  color: var(--dark-grey); /* Set text color to dark grey */
+  color: var(--dark-grey);
   text-decoration: none;
   font-size: 18px;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .links a:hover {
-  transform: translateY(-5px); /* Slight lift effect */
+  transform: translateY(-5px);
 }
-
-/* Cart Icon */
 .cart {
   font-size: 24px;
-  color: var(--dark-grey); /* Set icon color to dark grey */
+  color: var(--dark-grey); 
   cursor: pointer;
   transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -90,25 +81,22 @@
   font-size: 24px;
   cursor: pointer;
   margin: 20px;
-  color: var(--dark-grey); /* Close button color */
+  color: var(--dark-grey); 
 }
-
-/* Hamburger Menu */
 .hamburger {
   display: none;
   font-size: 28px;
   cursor: pointer;
-  color: var(--dark-grey); /* Hamburger icon color */
+  color: var(--dark-grey); 
   transition: color 0.3s ease, transform 0.3s ease;
   z-index: 10;
 }
 
 .hamburger:hover {
-  color: var(--gentle-coral); /* Hover color */
-  transform: rotate(90deg); /* Rotate effect on hover */
+  color: var(--gentle-coral); 
+  transform: rotate(90deg); 
 }
 
-/* Scrolled Navbar */
 #navbar.scrolled .box {
   width: 60vw;
   height: 100%;
@@ -151,6 +139,10 @@
     justify-content: center;
     align-items: center;
     margin-top: 65px;
+  }
+  #navbar{
+    padding: 0;
+    background-color: #fff;
   }
   .links.open {
     height: 60vh;
